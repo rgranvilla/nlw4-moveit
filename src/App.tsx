@@ -6,7 +6,7 @@ import light from "./styles/themes/light";
 import dark from "./styles/themes/dark";
 
 import GlobalStyle from "./styles/global";
-import Header from "./components/Header";
+import HeaderBar from "./components/HeaderBar";
 import ExperienceBar from "./components/ExperienceBar/";
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Header toggleTheme={toggleTheme} />
+      <HeaderBar toggleTheme={toggleTheme} />
       <div className="container">
         <ExperienceBar />
       </div>
